@@ -1,38 +1,238 @@
+@font-face {
+  font-family: "Motherline";
+  src: url("./fonts/Motherline.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Header {
+  background-image: url('./img/header.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 220px;
+}
+
+h1 {
+  font-family: "Motherline";
+  font-size: 150px;
+  text-shadow: 10px 0px 10px white;
+  line-height: 1.2em;
+  z-index: 5;
+}
+
+.TitleGallery {
+  margin-top: 20px;
+  font-family: "Motherline";
+  color: rgb(48, 89, 151);
+  text-align: center;
+  font-size: 35px;
+}
+
+.ChoosePlaces {
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 50px;
+  font-weight: normal;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  line-height: 2em;
+  text-transform: uppercase;
   color: white;
+  cursor: pointer;
+  z-index: 4;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.ChoosePlaces:hover {
+  color: black;
+  transition: all 1s ease-out;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+  width: 40%
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.Place {
+  width: 350px;
+  background-color: rgb(213, 210, 210);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0px;
+  border-radius: 3px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.TitlePlace {
+  font-family: 'Motherline';
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  width: 100%;
+  z-index: 999;
+  rotate: -2deg;
+  background-color: rgba(255, 255, 255, 0.6);
+  line-height: 0.5em;
+}
+
+.ImagePlace {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+
+.DescriptionPlace {
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  font-size: 12px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.LinkPlace {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 250px;
+  text-align: center;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.LinkPlace a {
+  font-family: 'Motherline';
+  color: rgb(48, 89, 151);
+  ;
+  font-size: 16px;
+  line-height: 2em;
+  text-decoration: none;
+}
+
+.BtnDeletePlace {
+  border: none;
+  border-radius: 3px;
+  width: 250px;
+  text-transform: uppercase;
+  padding: 5px 0;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: rgb(48, 89, 151);
+  color: white;
+  cursor: pointer;
+}
+
+.BtnDeletePlace:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+}
+
+.BtnClearAll {
+  width: 100%;
+  background-color: rgb(48, 89, 151);
+  line-height: 2em;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.BtnClearAll:hover {
+  color: rgb(48, 89, 151);
+  background-color: rgb(208, 222, 242);
+}
+
+.BtnShowMore {
+  border: none;
+  background-color: transparent;
+  color: rgb(48, 89, 151);
+  font-family: 'Motherline';
+}
+
+@media screen and (min-width: 376px) and (max-width: 750px) {
+  .Header {
+    padding-top: 300px;
+    transition: all 1s ease-out;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 100px;
+    transition: all 1s ease-out;
   }
+  
+  .TitleGallery {
+    transition: all 1s ease-out;
+    font-size: 25px;
+  }
+  
+  .ChoosePlaces {
+    transition: all 1s ease-out;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Header {
+    height: 100vh;
+    padding-top: 300px;
+    transition: all 1s ease-out;
+  }
+
+  h1 {
+    font-size: 75px;
+    transition: all 1s ease-out;
+  }
+  
+  .TitleGallery {
+    transition: all 1s ease-out;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  
+  .ChoosePlaces {
+    transition: all 1s ease-out;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .Gallery {
+    padding: 0;
+  }
+
+  .Place {
+    margin-right: 0;
+  }
+  
 }
