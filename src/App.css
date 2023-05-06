@@ -240,5 +240,11 @@ h1 {
   .TitlePlace {
     font-size: 26px;
   }
+
+  .ChoosePlaces:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%
+  }
   
 }
