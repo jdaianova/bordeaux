@@ -203,7 +203,7 @@ h1 {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
   .Header {
     height: 100vh;
     padding-top: 300px;
