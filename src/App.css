@@ -211,20 +211,22 @@ h1 {
   }
 
   h1 {
-    font-size: 75px;
+    font-size: 65px;
     transition: all 1s ease-out;
   }
   
   .TitleGallery {
+    align-self: center;
+    width: 250px;
     transition: all 1s ease-out;
-    font-size: 20px;
-    margin-top: 40px;
+    font-size: 15px;
+    margin-top: 20px;
   }
   
   .ChoosePlaces {
     transition: all 1s ease-out;
-    height: 40px;
-    font-size: 20px;
+    height: 35px;
+    font-size: 17px;
   }
 
   .Gallery {
@@ -233,6 +235,10 @@ h1 {
 
   .Place {
     margin-right: 0;
+  }
+
+  .TitlePlace {
+    font-size: 26px;
   }
   
 }
