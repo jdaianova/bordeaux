@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/bordeaux/static/css/main.0ff54df6.css",
+    "main.css": "/bordeaux/static/css/main.fc59e6ce.css",
     "main.js": "/bordeaux/static/js/main.41bca2bb.js",
     "static/js/787.41a659b2.chunk.js": "/bordeaux/static/js/787.41a659b2.chunk.js",
     "static/media/PontDePierre.jpg": "/bordeaux/static/media/PontDePierre.da0a12e68766b158d134.jpg",
@@ -12,12 +12,12 @@
     "static/media/Motherline.ttf": "/bordeaux/static/media/Motherline.5fca96a08e2b1ffd997b.ttf",
     "static/media/PorteCailhau.jpg": "/bordeaux/static/media/PorteCailhau.fd38d1c1c708f2e436df.jpg",
     "index.html": "/bordeaux/index.html",
-    "main.0ff54df6.css.map": "/bordeaux/static/css/main.0ff54df6.css.map",
+    "main.fc59e6ce.css.map": "/bordeaux/static/css/main.fc59e6ce.css.map",
     "main.41bca2bb.js.map": "/bordeaux/static/js/main.41bca2bb.js.map",
     "787.41a659b2.chunk.js.map": "/bordeaux/static/js/787.41a659b2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ff54df6.css",
+    "static/css/main.fc59e6ce.css",
     "static/js/main.41bca2bb.js"
   ]
 }
